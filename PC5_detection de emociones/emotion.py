@@ -4,6 +4,7 @@ from keras.models import load_model
 import mediapipe as mp
 import cvzone
 
+# referencia: https://github.com/oarriaga/face_classification/tree/master
 
 def emotions_label(num):
     emotions = {0: ['angry', (255, 0, 0)], 1: ['disgust', (255, 64, 0)], 2: ['fear', (255, 165, 0)],
