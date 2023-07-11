@@ -25,7 +25,7 @@ while True:
         count = cv2.countNonZero(espacio)
         cv2.putText(img, str(count), (x,y+h-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,0), 1)
         cv2.rectangle(img, (x,y), (x+w, y+h), (255,0,0), 2)
-        if count < 900:
+        if count < 2300:
             cv2.rectangle(img, (x,y), (x+w, y+h), (0,255,0), 2)
 
     cv2.imshow('video', img)
